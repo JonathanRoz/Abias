@@ -1,0 +1,38 @@
+    @mixin divsize($w,$h,$bg,) {
+        width: $w;
+        height: $h;
+        background: $bg;
+        
+    }
+
+    @mixin fontdetails($size,$weight,$color) {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: $size;
+        font-weight: $weight;
+        color: $color  ;
+    }
+    @mixin  titleh3() {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:104px ;
+        font-weight: 700;
+        color: $titlecolour;
+        opacity: 0.2;
+        text-transform: uppercase;
+        // margin-top: 234px;
+    }
+    @mixin  subtitle() {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:36px ;
+        font-weight: 600;
+        color: $subcolour;
+        text-transform: capitalize;
+        // margin-top: -51px ;
+        // margin-left: 10px;
+    }
+
+    @mixin item($w,$h,$bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+    
+}

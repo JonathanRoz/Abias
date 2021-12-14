@@ -1,0 +1,95 @@
+nav{
+    
+    .logo{
+        width: 20%;
+     img{
+         margin-top: 20px;
+     }
+    }
+    .nav-item{
+        width: 80%;
+    }
+    ul{
+      text-align: left;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 60%;
+      background: $scecolour;
+      border-bottom-left-radius: 53px;
+      padding: 30px 82px;
+    
+    li{  
+            display: inline-block;
+            margin: 0 15px;
+            position: relative !important;
+           a{
+               display: inline-block;
+            @include fontdetails(18px,400,#fff !important );
+            transition: .4s;
+            cursor: pointer;
+            
+           }
+            ul{
+                width: auto;
+                right: -37%;
+                top: 34px;
+                padding: 10px 25px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+              visibility: hidden;
+              opacity: 0;
+                transition: .4s;
+               
+                li{
+                    display: block;
+                    margin: 18px 0;
+                }
+            }
+            &:hover a{
+                color: rgba(255, 255, 255, 0.6) !important;
+            }
+            &:hover{
+                ul{
+                    
+                      visibility: visible;
+                      opacity: 1;
+                      li{
+                          a{
+                              color: #fff !important;
+                          }
+                      }
+                }
+            }
+        }
+    }
+  
+}
+.low{
+    background: $gradiantcolour;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-bottom: 35px !important;
+    animation: ani 2s;
+    @keyframes ani {
+        from{
+            left: -100%;
+        }
+        to{
+            left: 0%;
+        }
+        
+    }
+    ul{
+        background: transparent;
+        li{
+            color: $scecolour;
+            ul{
+                display: none;
+            }
+        }
+    }
+}

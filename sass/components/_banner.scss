@@ -1,0 +1,138 @@
+#banner-part{
+ 
+    .img{
+        position: absolute;
+        top: 26px;
+        right: 0px;
+        z-index: -1;
+        .robert{
+            position: absolute;
+            top: 57px;
+            right: 0;
+        }
+    }
+    .shape{
+        position: absolute;
+        top: 307px;
+        left: 0;
+
+    }
+   
+    h3{
+        @include fontdetails(30px,500,$primarycolour);
+        margin-top: 379px;
+        margin-bottom: 65px;
+        margin-left: 158px;
+    }
+    h1{
+        @include fontdetails(80px,700,$scecolour);
+        margin-bottom: 32px;
+        margin-left: 158px;
+    }
+    .rob{
+        color: $primarycolour;
+    }
+    h4{
+        @include fontdetails(48px,700,$scecolour);
+        margin-bottom: 36px;
+        margin-left: 158px;
+    }
+    p{
+        @include fontdetails(24px,600,$scecolour);
+        margin-bottom: 40px;
+        margin-left: 158px;
+
+
+    }
+    .button{
+         a{
+        display: inline-block;
+        background:  #142377;
+       @include fontdetails(18px,700,#fff);
+       padding:10px 40px ;
+       border-radius: 6px 6px 25px 6px;
+       position: relative;
+       overflow: hidden;
+       z-index: 1;
+       margin-left: 158px;
+      
+       &::after{
+           width: 80%;
+           height: 100%;
+           background: $primarycolour;
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 0;
+           z-index: -1;
+           clip-path: polygon(0 1%, 100% 0, 78% 99%, 0 100%);
+           transition: .4s;
+           border-top-left-radius: 5px;
+           border-bottom-left-radius: 5px;
+
+       }
+       &::before{
+        width: 90%;
+        height: 100%;
+        background:#4b1db5;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        clip-path: polygon(0 1%, 100% 0, 78% 99%, 0 100%);
+        transform: skew( 4deg);
+        border-bottom-left-radius: 65px;
+        border-top-left-radius: 38px;
+        transition: .4s;
+    }
+    &:hover::after{
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        border-bottom-right-radius: 23px;
+    }
+   &:hover::before{
+       width: 100%;
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+       border-bottom-right-radius: 50px;
+   }
+
+  
+    }
+    a:last-child{
+        background:  #565b78;
+        margin-left: 25px;
+        padding:10px 30px ;
+    }
+    a:last-child:after{
+        width: 100%;
+        height: 100%;
+        background:#100822;
+        content: "";
+        position: absolute;
+        top:0 ;
+        left: 0;
+      transition: .4s;
+        clip-path: polygon(23% 0, 100% 0, 100% 100%, 14% 100%);
+    }
+    & a:last-child:hover::after{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+    }
+    a:last-child:before{
+        width: 119%;
+        height: 100%;
+        background:#2a2c3b;
+        content: "";
+        position: absolute;
+        top:0 ;
+        right: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        clip-path: polygon(16% 1%, 100% 0, 100% 100%, 5% 100%);
+        transition: .4s;
+    }
+    & a:last-child:hover::before{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+    }
+}
+}

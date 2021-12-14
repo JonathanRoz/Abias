@@ -1,0 +1,19 @@
+.down{
+    
+    button{
+        width:70px ;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 39px;
+    background: rgb(13, 206, 55);
+    border-color: #000;
+    z-index: 9999;
+    display: none;
+    filter: drop-shadow(0 0 0.75rem crimson);
+       
+    
+    }
+}

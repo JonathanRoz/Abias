@@ -1,0 +1,218 @@
+
+#progress-part{
+    height: 519px;
+
+    .title{
+        text-align: center;
+        h3{
+            @include titleh3();
+            text-transform: capitalize;
+            font-size: 115px;
+            margin-top: 126px;
+        }
+        h4{
+            @include subtitle();
+            margin-top: -71px;
+        }
+    }
+    .line-container{
+        position: relative;
+        .line{
+                position: absolute;
+                top: 130px;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 2px;
+                 background: #edf2f5;
+                 transition: .4s;
+        }
+        .line2{
+            position: absolute;
+            top: 130px;
+            left: 0;
+            content: "";
+            width: 12%;
+            height: 2px;
+             background: $gradiantcolour;
+             transition: .4s;
+             
+            //  &:hover .line2{
+            //     width: 39%;
+            // }
+    }
+    }
+   
+   .main{
+       justify-content: space-between;
+    .item{
+        width: 24%;
+       
+       
+        .box{
+            width: 112px;
+            position: relative;
+            margin: 0 auto;
+            // top: 71px;
+
+            .round{
+                width: 112px;
+                height: 112px;
+                background: #9d7ddd;
+                border-radius: 50%;
+                transform: scale(.8);
+                transition: .4s;
+         }
+         .round2{
+            width: 90px;
+            height: 90px;
+            background: #4f40f0;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i{
+                font-size: 40px;
+                color: #fff;
+            }
+          
+     }
+     .round-fast{
+         transform: scale(1);
+     }
+     .plus{
+        background: #2d7af3 !important;
+    }
+    .bul{
+        background: #08baf6 !important;
+    }
+  
+    //  &:hover .round{
+    //      transform: scale(1.1);
+    //  }
+   
+  
+
+        }
+     
+      
+        h3{
+            @include fontdetails(18px,600,#2e2e2e);
+            text-transform: uppercase;
+            margin-left: 51px;
+            margin-top: 19px;
+        }
+        .brif{
+            margin-top: 35px;
+        }
+        .re{
+            margin-left: 108px;
+        }
+        .de{
+            margin-left: 81px;
+        }
+        .bu{
+            margin-left: 99px;
+        }
+        h1{
+            @include fontdetails(72px,600,#000);
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+        }
+        .num-item{
+            color: #9d7ddd;
+            position: absolute;
+            top: 153px;
+            left: 126px;
+        }
+        .num-itemtwo{
+            position: absolute;
+            top: 153px;
+            left: 457px;
+        }
+        .num-ite{
+            position: absolute;
+            bottom: -123px;
+            right: 463px;
+        }
+        .last{
+            position: absolute;      
+            top: 157px;
+            right: 145px;
+
+        }
+  
+
+    }
+    .one{
+        margin-top: -98px !important;
+    }
+    .two{
+        margin-top: -79px;
+    }
+    .three{
+        margin-top: -91px;
+    }
+    .four{
+        margin-top: -81px;
+    }
+   }
+
+   .item2{
+    width: 24%;
+    margin-top: 46px;
+   
+    .box{
+        width: 20px;
+        position: relative;
+        margin: 0 auto;
+        top: 72px;
+
+        .round{
+            width: 20px;
+            height: 20px;
+            background: $gradiantcolour;
+            border-radius: 50%;
+            transform: scale(.5);
+            transition: .4s;
+            margin-top: -79px;
+     }
+     .round2{
+        width: 12px;
+        height: 12px;
+    background: #aebcb9;
+        // background: #c4d3dd;
+        border-radius: 50% !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-57%,-46%) !important;
+        transition: .4s;
+       
+      
+      
+ }
+ .round-fast{
+    transform: scale(1);
+   
+
+}
+// &:hover .round{
+//     transform: scale(1);
+// }
+
+
+    }
+ 
+    
+   
+
+}
+
+}

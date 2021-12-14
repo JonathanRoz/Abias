@@ -1,0 +1,11 @@
+@import './base/common';
+@import './variables/variable';
+@import './mixins/mixins';
+
+
+//preloder
+@import './components/preloder';
+
+//pages
+
+@import './pages/home';

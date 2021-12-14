@@ -1,0 +1,182 @@
+#about-part{
+    margin-top: 100px;
+
+    .round{
+        width: 10px;
+        height: 10px;
+       
+    }
+    .round:nth-child(1){
+        width: 18px;
+        height: 18px;
+        top: 124px !important;
+            left: 1298px !important;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        background: blue !important;
+    }
+    .round:nth-child(2){
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        top: 185px !important;
+    left: 272px !important;
+background: #12c3ff;
+
+    }
+    .round:nth-child(3){
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        top: 166px  !important;
+            left: 1122px !important;
+        background: red;
+    }
+    .round:nth-child(4){
+        top: 123px !important;
+            left: 330px !important;
+    }
+    .round:nth-child(5){
+        clip-path: polygon(0 0, 100% 1%, 54% 100%, 54% 100%);
+        top: 194px !important;
+            left: 873px !important;
+        background: violet;
+        width: 27px;
+        height: 27px;
+    }
+    .round:nth-child(6){
+        clip-path: polygon(0 0, 100% 54%, 100% 55%, 0% 100%);
+    top: 594px !important;
+            left: 261px !important;
+            background: #12a8f6;
+            height: 33px ;
+                width: 27px ;
+    }
+    .round:nth-child(7){
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        top: 487px !important;
+    left: 223px !important;
+            background: hsl(347, 100%, 52%);
+            height: 23px ;
+                width: 23px ;
+    }
+    .round:nth-child(8){
+       
+        top: 398px !important;
+    left: 204px !important;   
+    }
+    .round:nth-child(9){
+        clip-path: polygon(64% 0, 64% 0, 100% 100%, 29% 100%);
+        top: 398px !important;
+    left: 1530px !important;  
+    background:#12a8f6; 
+    width: 50px;
+    height: 50px;
+   border-bottom-left-radius: 7px;
+   border-bottom-right-radius: 8px;
+    }
+    .round:nth-child(10){
+        clip-path: polygon(49% 9%, 88% 19%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 23% 17%);
+        top: 652px !important;
+    left: 435px !important;   
+    background: green;
+    width: 20px;
+    height: 20px;
+    }
+
+    .round:nth-child(11){
+        clip-path: polygon(57% 35%, 57% 36%, 83% 100%, 27% 100%);
+        top: 620px !important;
+            left: 719px !important; 
+    background: royalblue;
+    width: 40px;
+    height: 40px;
+    }
+    .round:nth-child(12){
+        top: 489px !important;
+            left: 719px !important; 
+    }
+    .round:nth-child(13){
+        clip-path: polygon(100% 0, 33% 55%, 100% 100%);
+        top: 626px !important;
+            left: 1048px !important;
+            background: rgb(29, 156, 160);
+            width: 20px;
+            height: 20px;
+    }
+    .round:nth-child(14){
+        clip-path: polygon(48% 28%, 85% 41%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 16% 37%);
+        top: 541px  !important;
+            left: 1200px  !important;
+            background: #12a8f6;
+            width: 15px   ;
+                height: 17px ;
+    }
+
+    .round:nth-child(15){
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        top: 571px  !important;
+            left: 1388px  !important;
+            background: #8333df;
+            width: 15px   ;
+                height: 17px ;
+    }
+    .round:nth-child(16){
+    
+        top: 392px  !important;
+            left: 1432px  !important;
+        
+          
+    }
+
+    .pic{
+        width: 100%;
+       img{
+        width: 100%;
+        margin-left: -39px;
+       }
+    }
+    .details{
+        width: 100%;
+     h3{
+         @include titleh3();
+         margin-top: 427px ;
+     }
+     h4{
+         @include subtitle();
+         margin-top: -73px ;
+     }
+     p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight:500;
+        font-size: 20px;
+        color: #1a115e;
+        text-align: justify;
+        line-height: 30px;
+        margin: 48px 10px ;
+     }
+     .pa{
+         color: #1a115e;
+         font-weight: 700;
+     }
+     ul{
+         margin-left: -30px;
+         li{
+             display: inline-block;
+             margin: 0 7px;
+             font-size: 18px;
+             height: 34px;
+             width: 34px ;
+             line-height: 34px;
+             border-radius: 50px ;
+             text-align: center;
+             color: #fff;
+             cursor: pointer;
+             background: #1a2cd7;
+             transition: .4s;
+             &:hover{
+                background: #1a115e;
+            }
+         }
+       
+     }
+
+     
+    }
+
+}

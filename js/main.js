@@ -129,6 +129,7 @@ var parallaxInstance = new Parallax(scene, {
                   centerMode:true,
                 }
               },
+            
               {
                 breakpoint: 576,
                 settings: {
@@ -274,6 +275,7 @@ var parallaxInstance = new Parallax(scene, {
                     
                   }
                 },
+              
                 {
                   breakpoint: 405,
                   settings: {
